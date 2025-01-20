@@ -1,0 +1,121 @@
+/* Add font  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+  }
+
+  .raleway-font {
+    font-family: "Raleway", serif;
+  }
+
+
+  *{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+  }
+  
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* shared style */
+  /* color */
+  .orange{
+    color: #FEA301;
+  }
+  .orange-bg{
+    background-color: #FEA301;
+  }
+  .sky-blue{
+    color: #01ACFD;
+  }
+  .facilities-color{
+    color: #05D4DF;
+  }
+  .admission-color{
+    color: #5D58EF;
+  }
+
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+}
+
+.content-container{
+    width: 90%;
+    margin-top: 20px;
+    /* background-color: white; */
+
+}
+
+/* nav style */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.school{
+    display: flex;
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    margin-right: 32px;
+}
+.school-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.home{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.nav-font-size{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.btn-primary{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 10px 60.5px;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+/* menu btn for large screen */
+.menu-btn{
+    display: none;
+}
+
+
+/* Responsive for small device */
+@media screen and (max-width:576px) {
+    .school-name, nav ul,nav button {
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width:576px) and (max-width: 767.98px) {
+    .school-name, nav ul,nav button {
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+
+}
