@@ -29,6 +29,12 @@
   .orange-bg{
     background-color: #FEA301;
   }
+  .black-color{
+    color: #111111;
+  }
+  .black-bg{
+    background-color: #111111;
+  }
   .sky-blue{
     color: #01ACFD;
   }
@@ -97,6 +103,39 @@ ul li{
 .menu-btn{
     display: none;
 }
+/* hero section style */
+.hero{
+    display: flex;
+    align-items: center;
+    /* flex: 1; */
+    justify-content: space-between;
+    margin-top: 40px;
+    /* gap: 20px; */
+}
+.hero-text{
+   
+    max-width: 50%;
+}
+.hero h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.hero p{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+.hero-img{
+    /* width: 40%; */
+    /* height: 100%; */
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
 
 
 /* Responsive for small device */
@@ -106,6 +145,29 @@ ul li{
     }
     .menu-btn{
         display: flex;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-text{
+        max-width: 100%;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero-text{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .hero p{
+        font-size: 0.875rem;
+        margin-bottom: 18px;
+    }
+    .hero button{
+        border-radius: 8px;
+        font-size: 1rem;
     }
 }
 
