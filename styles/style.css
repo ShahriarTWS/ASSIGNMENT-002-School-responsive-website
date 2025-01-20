@@ -143,10 +143,23 @@ ul li{
     .school-name, nav ul,nav button {
         display: none;
     }
+    .content-container{
+        margin-top: 0px;
+        width: auto;
+    }
+    nav{
+        border: 1px solid #FEA301;
+        padding: 12px 16px;
+    }
     .menu-btn{
         display: flex;
     }
+    .hero-section{
+        display: flex;
+        justify-content: center;
+    }
     .hero{
+        width: 90%;
         flex-direction: column-reverse;
         text-align: center;
     }
