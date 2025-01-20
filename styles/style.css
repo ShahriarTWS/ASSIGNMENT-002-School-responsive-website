@@ -162,6 +162,7 @@ ul li{
         width: 90%;
         flex-direction: column-reverse;
         text-align: center;
+        margin-top: 8px;
     }
     .hero-text{
         max-width: 100%;
@@ -192,5 +193,7 @@ ul li{
     .menu-btn{
         display: flex;
     }
-
+    .hero h1{
+        font-size: 2.5rem;
+    }
 }
