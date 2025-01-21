@@ -267,17 +267,11 @@ ul li{
 
     width: 100%;
     gap: 20px;
-    /* background-image: url(../assets/bg.png); */
     background:url(../assets/bg.png), linear-gradient(to top, rgba(254, 163, 1, 0.3), #FFFFFF 90%);
     background-repeat: no-repeat;
     padding-top: 60px;
-    padding-bottom: 60px;
-
-    /*  */
-    /* background:  linear-gradient(to bottom,#ffffff rgba(254, 163, 1, 0.3), rgba(254, 163, 1, 0.3)),url('../assets/bg.png'); */
-    background-size: cover; /* Ensures the image covers the entire container */
-    /* background-position: center; Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-repeat: no-repeat; 
     height: auto;
     /*  */
 }
@@ -353,20 +347,13 @@ ul li{
     box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
 }
 
-.date-box{
-    display: inline-block;
-    border-radius: 20%;
-    background-color: #3CD8E8;
 
-}
 .date-box{
     margin-left: 50px;
     margin-top: 0;
     position: relative;
-    background-color: #3CD8E8;
-
     top: -15px; 
-    left: 25%;
+    left: 20%;
 }
 
 .story span{
@@ -496,6 +483,7 @@ ul li{
 
     .story-container{
         width: 100%;
+        padding-top: 40px;
     }
     .story-container h1{
         margin-bottom: 40px;
@@ -508,15 +496,34 @@ ul li{
         animation-range: entry 0 cover 20%;
         box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05);
     }
+
+    .date-box span{
+        font-size: 0.625rem;
+    }
+    .view-all-btn{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 1rem;
+    }
     .story-1{
         display: none;
     }
     .small-story{
-       grid-template-columns: repeat(1, 1fr);
+       grid-template-columns: repeat(2, 1fr);
     }
-    /* .story-card{
-        background-color: white;
-    } */
+    .small-story h2{
+        font-size: 0.625rem;
+        margin: 20px;
+        /* margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px; */
+    }
+    .small-story .date-box {
+        margin-left: 0px;
+        margin-top: 0;
+        position: relative;
+        left: 10%;
+    }
     .marquee-text{
         width: 100%;
     }
