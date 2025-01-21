@@ -175,6 +175,9 @@ ul li{
 .curriculum h1{
     font-size: 2.875rem;
     font-weight: 700;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 70%;
 }
 .card-container{
     display: grid;
@@ -205,7 +208,7 @@ ul li{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
-    box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
 }
 .card-1{
     background: linear-gradient(to bottom, #DEF5FF, #FFFFFF 40%); 
@@ -334,8 +337,9 @@ ul li{
     /* text-align: center; */
 }
 .small-story h2{
-    margin: 30px 50px;
+    margin: 20px;
     font-weight: 700;
+    font-size: 1rem;
 }
 .story-card{
     background-color: white;
@@ -515,12 +519,20 @@ ul li{
     .small-story{
        grid-template-columns: repeat(2, 1fr);
     }
-    .small-story h2{
+    /* .small-story h2{
         font-size: 0.625rem;
-        margin: 20px;
+        margin: 1px;
+        margin: 10px 0px 20px 20px;
         /* margin-top: 20px;
         margin-left: 20px;
-        margin-right: 20px; */
+        margin-right: 20px; 
+    } */
+    .small-story h2{
+        /* margin: 20px;
+        font-weight: 700; */
+        font-size: 0.625rem;
+        margin-right: 5px;
+        margin-left: 10px;
     }
     .small-story .date-box {
         margin-left: 0px;
