@@ -74,7 +74,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 .school{
@@ -124,7 +124,7 @@ ul li{
     background-color: #FFFFFF;
     margin: 0 auto;
     margin-top: 15px;
-    width: 85%;
+    width: 90%;
 }
 .marquee-text span{
     position: relative;
@@ -144,7 +144,7 @@ ul li{
     margin: 0 auto;
     margin-top: 40px;
     /* gap: 20px; */
-    width: 85%;
+    width: 90%;
 }
 .hero-text{
    
@@ -176,7 +176,7 @@ ul li{
     text-align: center;
 }
 .curriculum-item{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 .curriculum h1{
@@ -335,7 +335,7 @@ ul li{
     /* box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
 }
 .story-item{
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 .story img{
@@ -432,7 +432,7 @@ footer{
     padding-bottom: 125px;
 }
 .footer-container{
-    width: 85%;
+    width: 90%;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3,1fr);
