@@ -93,7 +93,7 @@ ul li{
 }
 .school-name {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 .home{
     font-size: 1.25rem;
@@ -101,7 +101,7 @@ ul li{
 }
 .nav-font-size{
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 .btn-primary{
     font-size: 1.25rem;
@@ -110,7 +110,9 @@ ul li{
     border: none;
     border-radius: 12px;
     color: #FFFFFF;
+    cursor: pointer;
 }
+
 /* menu btn for large screen */
 .menu-btn{
     display: none;
@@ -157,7 +159,9 @@ ul li{
     font-size: 1.25rem;
     margin-bottom: 24px;
 }
-
+.hero button:hover{
+    background-color: #FEA301;
+}
 .hero img{
     width: 100%;
     height: 100%;
@@ -217,6 +221,9 @@ ul li{
     background: linear-gradient(to bottom, #DEF5FF, #FFFFFF 40%); 
     border: 1px solid #DEF5FF;
 }
+.card-1:hover{
+    background: linear-gradient(to bottom, #DEF5FF 100%, #FFFFFF ); 
+}
 .card-1 h3{
     color: #64C8FF;
 }
@@ -224,12 +231,18 @@ ul li{
     background: linear-gradient(to bottom, #FFF4DC, #FFFFFF 40%); 
     border: 1px solid #FFF4DC;
 }
+.card-2:hover{
+    background: linear-gradient(to bottom, #FFF4DC 100%, #FFFFFF ); 
+}
 .card-2 h3{
     color: #F0AA00;
 }
 .card-3{
     background: linear-gradient(to bottom, #F2E8FF, #FFFFFF 40%); 
     border: 1px solid #F2E8FF;
+}
+.card-3:hover{
+    background: linear-gradient(to bottom, #F2E8FF 100%, #FFFFFF ); 
 }
 .card-3 h3{
     color: #8700FF;
@@ -254,7 +267,9 @@ ul li{
     margin: 0 auto;
     margin-bottom: 60px;
     justify-content: space-between;
+    cursor: pointer;
 }
+
 .arrow{
     width: 60px;
     height: 60px;
@@ -265,7 +280,12 @@ ul li{
     font-weight: bolder;
     border-radius: 50%;
     font-size: 1.5rem;
+    border: 1px solid #FEA301;
 
+}
+.arrow:hover{
+    background-color: white;
+    color: #FEA301;
 }
 
 /* story section style */
@@ -289,6 +309,10 @@ ul li{
     color: #000000;
     text-align: center;
     margin-bottom: 80px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    /* box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
 }
 .view-all-btn{
     display: flex;
@@ -304,7 +328,7 @@ ul li{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
-    box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
 }
 .story-item{
     width: 85%;
@@ -348,6 +372,7 @@ ul li{
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
+    cursor: pointer;
     /* animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
@@ -414,7 +439,13 @@ footer{
     display: flex;
 
 }
-
+footer .footer-logo img{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+    cursor: pointer;
+    /* box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
+}
 footer h1{
     font-size: 2.63rem;
     margin-left: 10px;
@@ -430,11 +461,13 @@ footer h3{
     font-size: 1.5rem;
     margin-bottom: 32px;
     font-weight: 700;
+    cursor: pointer;
 }
 footer p{
     color: white;
     font-size: 1.25rem;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 footer h2{
     color: white;
@@ -443,6 +476,11 @@ footer h2{
 }
 footer .social-icon{
     margin-top: 32px;
+    cursor: pointer;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 5%;
+    cursor: pointer;
 }
 /* Responsive for small device */
 @media screen and (max-width:576px) {
@@ -551,7 +589,7 @@ footer .social-icon{
         animation: appear linear;
         animation-timeline: view();
         animation-range: entry 0 cover 20%;
-        box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05);
+        /* box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05); */
     }
 
     .date-box span{
@@ -597,9 +635,29 @@ footer .social-icon{
         width: 100%;
     }
 
+    footer{
+        padding-top: 65px;
+        padding-bottom: 60px;
+    }
     .footer-container{
         grid-template-columns: repeat(1,1fr);
         justify-items: left;
+    }
+
+    footer h1{
+        font-size: 2.25rem;
+    }
+    .ing-name p{
+        font-size: 1rem;
+    }
+    footer h3{
+        font-size: 1.25rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    footer h2{
+        font-size: 1.375rem;
     }
 }
 
