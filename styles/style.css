@@ -293,7 +293,7 @@ ul li{
 
     width: 100%;
     gap: 20px;
-    background:url(../assets/bg.png), linear-gradient(to top, rgba(254, 163, 1, 0.3), #FFFFFF 90%);
+    background:url(../assets/bg.png), linear-gradient(to top, rgba(254, 163, 1, 0.3), #F7F7F7 90%);
     background-repeat: no-repeat;
     padding-top: 60px;
     background-size: cover;
