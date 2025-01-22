@@ -616,6 +616,7 @@ footer .social-icon{
     }
     .small-story{
        grid-template-columns: repeat(2, 1fr);
+       gap: 10px;
     }
     /* .small-story h2{
         font-size: 0.625rem;
