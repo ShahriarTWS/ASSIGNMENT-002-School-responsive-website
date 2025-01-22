@@ -322,6 +322,10 @@ ul li{
     margin-top: 90px;
     margin-bottom: 70px;
 }
+.view-all-btn button:hover{
+    background-color: #FEA301;
+    font-weight: 600;
+}
 .story{
     display: flex;
     gap: 20px;
@@ -599,8 +603,13 @@ footer .social-icon{
     .view-all-btn{
         margin-top: 20px;
         margin-bottom: 40px;
-        font-size: 1rem;
+        /* font-size: 0.5rem; */
         padding: 0px 37px 0px 37px;
+    }
+    .view-all-btn button{
+        font-size: 1rem;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .story-1{
         display: none;
